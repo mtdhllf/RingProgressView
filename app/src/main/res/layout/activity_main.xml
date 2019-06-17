@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:background="@android:color/black"
+                                             tools:context=".MainActivity">
+
+    <com.mtdhllf.widget.progress.RingProgressView
+            android:id="@+id/ringView"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            app:f_ringBgColor="#464647"
+            app:f_startColor="#6CC6A9"
+            app:f_centerColor="#2AF4BC"
+            app:f_endColor="#4965FF"
+            app:f_startProgress="0"
+            app:f_endProgress="100"
+            app:f_progress="50"
+            app:f_startAngle="-225"
+            app:f_endAngle="45"
+            app:f_startBgAngle="-225"
+            app:f_endBgAngle="45"
+            app:f_roundWidth="8dp"
+            app:f_strokeCap="round"
+            app:f_strokeJoin="round"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp"
+            android:layout_marginTop="100dp"/>
+
+    <FrameLayout android:layout_width="180dp" android:layout_height="180dp"
+                 android:id="@+id/frameLayout"
+                 android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+                 android:layout_marginTop="40dp" app:layout_constraintTop_toBottomOf="@+id/ringView"
+                 app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+                 android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+                 android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+                 app:layout_constraintVertical_bias="0.0">
+
+        <com.mtdhllf.widget.progress.RingProgressView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:f_ringBgColor="#464647"
+                app:f_startColor="#6CC6A9"
+                app:f_centerColor="#2AF4BC"
+                app:f_endColor="#26F28A"
+                app:f_duration="1000"
+                app:f_roundWidth="8dp"
+                app:f_progress="60"
+        />
+
+        <com.mtdhllf.widget.progress.RingProgressView
+                android:layout_gravity="center"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                app:f_duration="1000"
+                app:f_strokeCap="round"
+                app:f_startColor="#6CC6A9"
+                app:f_centerColor="#2AF4BC"
+                app:f_endColor="#6AAFFD"
+                app:f_roundWidth="8dp"
+                app:f_progress="50"
+        />
+
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

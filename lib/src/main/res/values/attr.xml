@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RingProgressView">
+        <!--前景环形是否使用渐变-->
+        <attr format="boolean" name="f_useGradient"/>
+        <!--前景环形渐变起始颜色-->
+        <attr format="color" name="f_startColor"/>
+        <!--前景环形渐变中间颜色-->
+        <attr format="color" name="f_centerColor"/>
+        <!--前景环形渐变结束颜色-->
+        <attr format="color" name="f_endColor"/>
+        <!--前景环形颜色-->
+        <attr format="color" name="f_ringColor"/>
+        <!--背景环形颜色-->
+        <attr format="color" name="f_ringBgColor"/>
+        <!--前景环形起始角度-->
+        <attr format="float" name="f_startAngle"/>
+        <!--前景环形结束角度-->
+        <attr format="float" name="f_endAngle"/>
+        <!--背景环形起始角度-->
+        <attr format="float" name="f_startBgAngle"/>
+        <!--背景环形结束角度-->
+        <attr format="float" name="f_endBgAngle"/>
+        <!--环形线宽-->
+        <attr format="dimension" name="f_roundWidth"/>
+        <!--进度变化动画时长-->
+        <attr format="integer" name="f_duration"/>
+        <!--前景环形开始进度-->
+        <attr format="float" name="f_startProgress"/>
+        <!--前景环形结束进度-->
+        <attr format="float" name="f_endProgress"/>
+        <!--前景环形目标进度(你想设置的)-->
+        <attr format="float" name="f_progress"/>
+        <!--环形线帽样式Paint.Cap-->
+        <attr format="enum" name="f_strokeCap">
+            <!--默认没有-->
+            <enum name="butt" value="0"/>
+            <!--圆角-->
+            <enum name="round" value="1"/>
+            <!--直角-->
+            <enum name="square" value="2"/>
+        </attr>
+        <!--环形描边样式,详见Paint.Join-->
+        <attr format="enum" name="f_strokeJoin">
+            <enum name="miter" value="0"/>
+            <enum name="round" value="1"/>
+            <enum name="bevel" value="2"/>
+        </attr>
+    </declare-styleable>
+</resources>
