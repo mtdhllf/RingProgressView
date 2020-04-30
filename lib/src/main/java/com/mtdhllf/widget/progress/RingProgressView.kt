@@ -6,6 +6,8 @@ import android.graphics.*
 import android.util.AttributeSet
 import android.view.View
 import android.view.animation.LinearInterpolator
+import kotlin.math.max
+import kotlin.math.min
 
 /**
  * author: mtdhllf
@@ -130,9 +132,9 @@ class RingProgressView : View {
             field = when {
                 value in startProgress..endProgress -> value
 
-                value > Math.max(startProgress, endProgress) -> Math.max(startProgress, endProgress)
+                value > max(startProgress, endProgress) -> Math.max(startProgress, endProgress)
 
-                else -> Math.min(startProgress, endProgress)
+                else -> min(startProgress, endProgress)
             }
             va.setFloatValues(tempProgress, progress)
             va.start()
