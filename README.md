@@ -22,12 +22,6 @@ implementation 'com.mtdhllf.widget:ring-progress:1.1.0'
 
 (Please replace the latest version: [ ![Download](https://api.bintray.com/packages/mtdhllf/maven/ring-progress/images/download.svg?version=1.1.0) ](https://bintray.com/mtdhllf/maven/ring-progress/1.1.0/link))  
 
-Add this allprojects repositories in your build.gradle when gradle resolve files fail
-
-```groovy
-maven{ url 'https://dl.bintray.com/mtdhllf/maven' }
-```
-
 ## Usage  
 ```xml
 <com.mtdhllf.widget.progress.RingProgressView
